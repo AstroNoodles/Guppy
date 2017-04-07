@@ -10,7 +10,4 @@ public class ChoiceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choice);
-        Toolbar title = (Toolbar) findViewByID(R.id.toolbar);
-        setActionBar(title);
-    }
-}
+
