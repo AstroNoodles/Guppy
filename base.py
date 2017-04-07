@@ -37,6 +37,8 @@ values = {
   "burn" : "Stay away from fire at all times..."
 }
 
+unknown = []
+
 while True:
   s = raw_input("What is your situation?");
   for word in values:
@@ -45,5 +47,6 @@ while True:
       break
   else:
     print genericReply()
+    unknown.add(s)
   again()  
     
