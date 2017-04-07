@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.squarespace.mike.choice">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <uses-permisson android:name="android.permisson.INTERNET" />
+
 
     <application
         android:allowBackup="true"
@@ -20,4 +22,6 @@
         </activity>
     </application>
 
+
 </manifest>
+
