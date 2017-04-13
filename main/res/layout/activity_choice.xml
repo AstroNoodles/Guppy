@@ -10,6 +10,7 @@
     <include layout="@layout/toolbar"
         android:id="@+id/iToolbar"/>
 
+
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,6 +18,5 @@
         android:layout_below="@+id/iToolbar"
         android:scrollbars="vertical"
         android:id="@+id/main"/>
-
 
 </RelativeLayout>
