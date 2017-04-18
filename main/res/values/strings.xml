@@ -1,3 +1,4 @@
+<!--You need this file in Android in order for localizing your app. Only doing it in English so far. The colors and styles files are not important-->
 <resources>
     <string name="app_name">Choice!</string>
     <string name="title">Choice!</string>
