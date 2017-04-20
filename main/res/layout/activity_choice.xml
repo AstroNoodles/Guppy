@@ -1,22 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.squarespace.mike.choice.ChoiceActivity"
-    android:background="#808080">
+    android:background="#808080"
+    tools:context="com.squarespace.mike.choice.ChoiceActivity">
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/iToolbar"/>
+    <include
+        android:id="@+id/iToolbar"
+        layout="@layout/toolbar" />
 
-
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <EditText
+        android:id="@+id/situation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result"
         android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif"
+        android:hint="@string/enter"
+        android:inputType="text"
+        android:lines="3"
+        android:ems="100"
+        android:textSize="19sp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_below="@+id/iToolbar"
-        android:scrollbars="vertical"
-        android:id="@+id/main"/>
+        android:onClick="start"
+        android:text="@string/go" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ok"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/rbackground"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/respond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/respond"
+        android:onClick="setFile"
+        android:text="@string/save"
+        android:visibility="invisible"
+        android:layout_below="@+id/respond"
+        android:layout_alignStart="@+id/empty"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clear"
+        android:text="@string/empty"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp" />
+
 
 </RelativeLayout>
