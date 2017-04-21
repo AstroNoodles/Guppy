@@ -36,7 +36,10 @@ public class ChoiceBacklog {
                 "lesbian marriage", "gay marriage", "homoerotic", "queer love", "homophobic");
         addList("Protect your gun at all costs. \nYour trigger is a weapon to all.", "gun control", "gun kill",
                 "gun killings", "gun out of control");
-        addExternalLists();
+        addList("Vanilla is the best if you can't eat vanilla then eat choclate","vanilla or","chocolate or","strawberry or", "vanilla or chocolate?");
+        addList("Left always go left","Left or right");
+        addList("Eat fruits or vegtables. \nTry a healthy snack.", "hungry", "I want food","What should I eat"
+        addExternalLists()
 
     }
 
