@@ -1,13 +1,14 @@
 package com.squarespace.mike.choice;
 
+import android.content.Context;
 import android.os.Environment;
 import android.util.ArrayMap;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -16,9 +17,12 @@ import java.util.Map;
 public class ChoiceBacklog {
 
     private ArrayMap<List<String>, String> vals = new ArrayMap<>();
+    private Context ctx;
 
-    public ChoiceBacklog(){
-        addList("Calm down, \neverything will be all right!", "sad", "mad", "angry", "upset", "bitter", "enraged", "harebrained",
+    public ChoiceBacklog(Context ctx){
+        this.ctx = ctx;
+
+        addList("Calm down, \nEverything will be all right!", "sad", "mad", "angry", "upset", "bitter", "enraged", "harebrained",
                 "insane", "crazy", "argument");
         addList("Let it heal off. \nThen, try your activity again.", "fire", "burn", "cut", "hazard", "frostbite", "freeze");
         addList("Think about if you're happy with him/her", "love", "kiss", "bang", "sex", "erotic");
@@ -26,26 +30,25 @@ public class ChoiceBacklog {
                 "suicide", "life", "annihilation", "felo-de-se", "hara-kiri", "melange");
         addList("Drug use is only taken in moderation. \n Being too drunk might mean death or being badly injured!", "morphine",
                 "cocaine", "heroine", "drug abuse", "alcoholism", "drug addiction", "alcohol abuse", "drug use");
-        addList("Obesity is a big problem. \n Let yourself fix it. Restrict the sweets you eat!", "obesity", "rotundness",
+        addList("Obesity is a big problem. \n Let yourself fix it. \nRestrict the sweets you eat!", "obesity", "rotundness",
                 "plumpness", "fat", "overweight", "chubby", "plump", "rotund", "paunch", "big belly", "obese");
-        addList("A baby is the creation of a human being. \n Do you really want to kill it?", "abortion", "not want fetus",
-                "miscarraige", "feticide", "misbirth", "aborticide");
-        addList("What you think is up to you. \n Just try to keep up with the news and keep secret your feelings",
-                "not allowed", "illegal immigrants", "people without visas", "illegal crossing", "not legal citizens");
         addList("All sexes should be allowed to marry each other from their ideals. \n It's not weird.", "homophile love",
                 "lesbian marriage", "gay marriage", "homoerotic", "queer love", "homophobic");
-        addList("Protect your gun at all costs. \nYour trigger is a weapon to all.", "gun control", "gun kill",
-                "gun killings", "gun out of control");
-        addList("Vanilla is the best if you can't eat vanilla then eat choclate","vanilla or","chocolate or","strawberry or", "vanilla or chocolate?");
-        addList("Left always go left","Left or right");
-        addList("Eat fruits or vegtables. \nTry a healthy snack.", "hungry", "I want food","What should I eat"
-        addExternalLists()
+        addList("Vanilla. \n Always vanilla","vanilla or","chocolate or","strawberry or", "vanilla or chocolate?");
+        addList("Left always go left","Left or right", "left or", "right or");
+        addList("Eat fruits or vegetables. \nTry a healthy substitute.", "hungry", "I want food", "diet", "quick snack");
+        addList("Try to go to sleep at a reasonable hour. \n Preferably, 11 pm or so", "What time should I go to sleep?",
+                "to sleep", "too late", "stay up all night", "all nighter", "not want sleep");
+        addList("Lower your expectations.", "big test", "high expectations", "expectations", "good score",
+                "great score", "great expectations", "scared on test", "overconfidence", "overconfident");
+        addExternalLists();
 
     }
 
     public void addExternalLists(){
         if(canReadExternal()){
             File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "userDs.txt");
+            if(!file.exists()) return;
             try{
                 BufferedReader br = new BufferedReader(new FileReader(file));
                 String line;
@@ -54,18 +57,15 @@ public class ChoiceBacklog {
                     build.append(line);
                 }
                 String[] items = build.toString().split(":");
+                String key = "", value = "";
                 for(int i = 0; i < items.length; i++){
-                    String key = "";
-                    String value = "";
                     if(i % 2 == 0) key = items[i]; else value = items[i];
-                    vals.clear();
-                    addList(value, key);
-
                 }
+                addList(value, key);
             } catch(IOException e){
                 e.printStackTrace();
             }
-        } else System.out.println("Not able to read external data. :-p");
+        } else System.out.println("can't read external data");
     }
 
     public String reply(String problem) {
@@ -76,7 +76,7 @@ public class ChoiceBacklog {
                 }
             }
         }
-        return "I'm not sure on that.\n Could you remind me on what to say?";
+        return ctx.getString(R.string.unsure);
     }
 
     public boolean canReadExternal(){
@@ -86,8 +86,8 @@ public class ChoiceBacklog {
 
     public void addList(String value, String... keys){
         List<String> list = Arrays.asList(keys);
+        System.out.println(list);
         vals.put(list, value);
-        System.out.println(vals);
 
     }
 

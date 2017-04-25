@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">¡Opción!</string>
+    <string name="title">¡Opción!</string>
+    <string name="enter">Introduzca su situación aquí:</string>
+    <string name="empty">Despejar</string>
+    <string name="save">Salvar</string>
+    <string name="go">Ir</string>
+    <string name="unsure">No estoy seguro en eso.\n ¿Podría Recordarme en qué decir?</string>
+    <string name="noexternal">Esta aplicación no puede escribir a datos externos. Por favor, encienda este permiso.</string>
+    <string name="une">No estoy seguro</string>
+</resources>

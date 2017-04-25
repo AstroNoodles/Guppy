@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Choix!</string>
+    <string name="empty">Enlever</string>
+    <string name="go">Partir</string>
+    <string name="save">Garder</string>
+    <string name="title">Choix!</string>
+    <string name="une">pas sûr</string>
+    <string name="enter">Entrez votre situation ici:</string>
+    <string name="noexternal">Cette application ne peut pas écrire sur des données externes. Veuillez activer cette autorisation.</string>
+    <string name="unsure">Je ne suis pas sûr de cela. Pourriez-vous me rappeler sur quoi dire?</string>
+</resources>

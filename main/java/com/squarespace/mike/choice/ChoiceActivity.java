@@ -19,6 +19,7 @@ public class ChoiceActivity extends AppCompatActivity {
     public EditText situation, respond;
     public Button save;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
@@ -30,9 +31,9 @@ public class ChoiceActivity extends AppCompatActivity {
     }
 
     public void start(View v){
-        ChoiceBacklog log = new ChoiceBacklog();
+        ChoiceBacklog log = new ChoiceBacklog(this);
         String reply = log.reply(situation.getText().toString());
-        if(reply.contains("not sure")){
+        if(reply.contains(getString(R.string.une))){
             respond.setVisibility(View.VISIBLE);
             save.setVisibility(View.VISIBLE);
             result.setText(reply);
@@ -51,20 +52,16 @@ public class ChoiceActivity extends AppCompatActivity {
 
     public void setFile(View v){
         if(canWriteExternal()) {
-            try {
             File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "userDs.txt");
             file.getParentFile().mkdirs();
-                BufferedWriter bw = new BufferedWriter(new FileWriter(file, true));
-                bw.write("");
+            try(BufferedWriter bw = new BufferedWriter(new FileWriter(file, true));){
                 bw.write(situation.getText().toString() + ":" + respond.getText().toString() + "\n");
                 bw.flush();
-                bw.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         } else
-        Toast.makeText(this, "This app cannot write to external data. Please turn this permission on.",
-                Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.noexternal, Toast.LENGTH_SHORT).show();
     }
 
     public boolean canWriteExternal(){
