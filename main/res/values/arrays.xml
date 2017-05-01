@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feelings">
+        <item> sad </item> <item> mad </item> <item> upset </item> <item> bitter </item>
+        <item> enraged </item> <item> harebrained </item> <item> insane </item> <item> crazy </item>
+        <item> argument </item> </string-array>
+    <string name="feelresponse">Calm down, \nEverything will be all right!</string>
+
+    <string-array name="injury">
+        <item> fire </item> <item> burn </item> <item> cut </item> <item> frostbite </item>
+        <item> froze</item> </string-array>
+    <string name="injuryresponse">Let it heal off. \nThen, rethink what you did.</string>
+
+    <string-array name="love">
+        <item> love </item> <item> bang </item> <item> kiss </item> <item> sex </item>
+        <item> erotic </item> </string-array>
+    <string name="loveresponse">Think about if you\'re happy with him/her.</string>
+
+    <string-array name="suicide">
+        <item> death </item> <item> suicide </item> <item> felo-de-se </item> <item> melange </item>
+        <item> hara-kiri </item> <item> self-annihilation </item> </string-array>
+    <string name="suicideresponse">Don\'t kill yourself! \nThink about what you hold dear in life! Friends, Family, Video Games? ;-)
+    </string>
+
+    <string-array name="drugs">
+        <item> morphine </item> <item> cocaine </item> <item> heroin </item> <item> drug use </item>
+        <item> alcoholism </item> <item> drug addiction </item> <item> alcohol abuse</item> </string-array>
+    <string name = "drugresponse"> Drug use is only taken in moderation.\n
+        Being too drunk might mean death or being badly injured!</string>
+
+    <string-array name="obesity">
+        <item> obesity </item> <item> rotundness </item> <item> plumpness </item> <item> fat </item>
+        <item> overweight </item> <item> chubby </item> <item> plump </item> <item> rotund </item>
+        <item> paunch </item> <item> big belly </item> <item> obese</item> </string-array>
+    <string name="obeseresponse">Obesity is a big problem. \nLet yourself fix it. \nRestrict the sweets you eat!</string>
+
+    <string-array name="vorc">
+        <item> Vanilla or </item> <item> Chocolate or </item> <item> Strawberry or </item> <item> Vanilla or Chocolate? </item>
+    </string-array>
+    <string name="vorcresponse"> Vanilla. \nAlways Vanilla. </string>
+
+    <string-array name="lorr">
+        <item> Left or</item> <item> Right or </item> <item> Left or Right? </item> </string-array>
+    <string name="lorrresponse">Left. \nAlways Go Left.</string>
+
+    <string-array name="fruorvege">
+        <item> hungry </item> <item> I want food </item> <item> diet </item> <item> quick snack </item>
+    </string-array>
+    <string name="fruorvegeresponse">Eat fruits or vegetables. \nOr, try a healthy substitute.</string>
+
+    <string-array name="sleep">
+        <item>to sleep </item> <item> too late </item> <item> not want sleep </item> <item> stay up all night</item>
+        <item> all-nighter</item> <item> What time should I go to sleep? </item> </string-array>
+    <string name="sleepresponse">Try to go to sleep at a reasonable hour. \nPreferably, 11 pm or so. </string>
+
+    <string-array name="expectations">
+        <item>big test</item> <item>high expectations</item> <item>wonderful score</item>  <item>scared of test</item>
+        <item>overconfidence</item> <item>overconfident</item> <item>huge expectations</item> </string-array>
+    <string name="expectresponse">Lower your expectations.</string>
+
+    <string name="startpresent">Should we start the presentation?</string>
+    <string name="presentresponse">Yes, now is definitely the time to present.</string>
+</resources>

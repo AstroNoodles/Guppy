@@ -31,7 +31,7 @@ public class ChoiceActivity extends AppCompatActivity {
     }
 
     public void start(View v){
-        ChoiceBacklog log = new ChoiceBacklog(this);
+        ChoiceBacklog log = new ChoiceBacklog(getResources());
         String reply = log.reply(situation.getText().toString());
         if(reply.contains(getString(R.string.une))){
             respond.setVisibility(View.VISIBLE);
