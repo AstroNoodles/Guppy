@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feelings">
+        <item> triste </item> <item> furieux </item> <item> dérangé </item> <item> amer </item>
+        <item> agacé </item> <item> insensé </item> <item> fou </item> <item> farfelu </item>
+        <item> argument </item> </string-array>
+    <string name="feelresponse">Calme, tout ira bien!</string>
+
+    <string-array name="injury">
+        <item> feu </item> <item> brûler </item> <item> entaille </item> <item> gelure </item>
+        <item> Gelé </item> </string-array>
+    <string name="injuryresponse">Laissez-le guérir. \nEnsuite, repensez ce que vous avez fait.</string>
+
+    <string-array name="love">
+        <item> amour </item> <item> baiser </item> <item> bise </item> <item> sexe </item>
+        <item> érotique </item> </string-array>
+    <string name="loveresponse">Pensez si vous êtes heureux avec lui.</string>
+
+    <string-array name="suicide">
+        <item> décès </item> <item> suicide </item> <item> coupable de suicide </item> <item> trépas </item>
+        <item> hara-kiri </item> <item> auto-anéantissement </item> </string-array>
+    <string name="suicideresponse">Ne vous tuez pas! Pensez à ce que vous êtes cher dans la vie! Amis, famille, jeux vidéo? ;-)
+    </string>
+
+    <string-array name="drugs">
+        <item> morphine </item> <item> cocaïne </item> <item> héroïne </item> <item> l\'usage de drogues </item>
+        <item> alcoolisme </item> <item> la toxicomanie </item> <item> l\'abus d\'alcool </item> </string-array>
+    <string name = "drugresponse"> L\'usage de drogue n\'est pris que par modération. \n
+        Être trop ivre pourrait signifier la mort ou être gravement blessé!</string>
+
+    <string-array name="obesity">
+        <item> obésité </item> <item> La rotation </item> <item> plumpness </item> <item> graisse </item>
+        <item> en surpoids </item> <item> joufflu </item> <item> dodu </item> <item> rondelet </item>
+        <item> panse </item> <item> gros ventre </item> <item> obèse </item> </string-array>
+    <string name="obeseresponse">L\'obésité est un gros problème. \nLaissez-vous réparer. \nLimitez les bonbons que vous mangez!</string>
+
+    <string-array name="vorc">
+        <item> Vanille ou </item> <item> Chocolat ou </item> <item> Fraise ou </item> <item> Vanille ou chocolat? </item> </string-array>
+    <string name="vorcresponse"> Vanille. \nToujours vanille </string>
+
+    <string-array name="lorr">
+        <item> Gauche ou </item> <item> Droit ou </item> <item> gauche ou droite? </item> </string-array>
+    <string name="lorrresponse">La gauche. \nToujours aller à gauche.</string>
+
+    <string-array name="fruorvege">
+        <item> affamé </item> <item> Je veux de la aliments </item> <item> régime </item> <item> quick collation rapide </item>
+    </string-array>
+    <string name="fruorvegeresponse">Mangez des fruits ou des légumes. \nOu essayez un substitut sain.</string>
+
+    <string-array name="sleep">
+        <item> dormir </item> <item> trop tard </item> <item> ne veulent pas dormir </item> <item> Faire nuit blanche </item>
+        <item> all-nighter </item> <item> À quelle heure dois-je m\'endormir? </item> </string-array>
+    <string name="sleepresponse">Essayez d\'aller dormir à une heure raisonnable. \nDe préférence, 11 heures environ. </string>
+
+    <string-array name="expectations">
+        <item>grand test</item> <item>des attentes élevées </item> <item>Merveilleux score</item>  <item>Peur du test</item>
+        <item>trop de confience</item> <item>trop confiant</item> <item>Énormes attentes</item> </string-array>
+    <string name="expectresponse">Abaisser vos attentes.</string>
+</resources>

@@ -1,9 +1,8 @@
 package com.squarespace.mike.choice;
 
-import android.content.Context;
+import android.content.res.Resources;
 import android.os.Environment;
 import android.util.ArrayMap;
-import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,35 +16,28 @@ import java.util.Map;
 public class ChoiceBacklog {
 
     private ArrayMap<List<String>, String> vals = new ArrayMap<>();
-    private Context ctx;
+    private Resources res;
 
-    public ChoiceBacklog(Context ctx){
-        this.ctx = ctx;
-
-        addList("Calm down, \nEverything will be all right!", "sad", "mad", "angry", "upset", "bitter", "enraged", "harebrained",
-                "insane", "crazy", "argument");
-        addList("Let it heal off. \nThen, try your activity again.", "fire", "burn", "cut", "hazard", "frostbite", "freeze");
-        addList("Think about if you're happy with him/her", "love", "kiss", "bang", "sex", "erotic");
-        addList("Don't kill yourself! \nThink about what you hold dear in life! Friends, Family, Video Games? ;-)", "death",
-                "suicide", "life", "annihilation", "felo-de-se", "hara-kiri", "melange");
-        addList("Drug use is only taken in moderation. \n Being too drunk might mean death or being badly injured!", "morphine",
-                "cocaine", "heroine", "drug abuse", "alcoholism", "drug addiction", "alcohol abuse", "drug use");
-        addList("Obesity is a big problem. \n Let yourself fix it. \nRestrict the sweets you eat!", "obesity", "rotundness",
-                "plumpness", "fat", "overweight", "chubby", "plump", "rotund", "paunch", "big belly", "obese");
-        addList("All sexes should be allowed to marry each other from their ideals. \n It's not weird.", "homophile love",
-                "lesbian marriage", "gay marriage", "homoerotic", "queer love", "homophobic");
-        addList("Vanilla. \n Always vanilla","vanilla or","chocolate or","strawberry or", "vanilla or chocolate?");
-        addList("Left always go left","Left or right", "left or", "right or");
-        addList("Eat fruits or vegetables. \nTry a healthy substitute.", "hungry", "I want food", "diet", "quick snack");
-        addList("Try to go to sleep at a reasonable hour. \n Preferably, 11 pm or so", "What time should I go to sleep?",
-                "to sleep", "too late", "stay up all night", "all nighter", "not want sleep");
-        addList("Lower your expectations.", "big test", "high expectations", "expectations", "good score",
-                "great score", "great expectations", "scared on test", "overconfidence", "overconfident");
+    public ChoiceBacklog(Resources res){
+        this.res = res;
+        addList(res.getString(R.string.feelresponse), res.getStringArray(R.array.feelings));
+        addList(res.getString(R.string.injuryresponse), res.getStringArray(R.array.injury));
+        addList(res.getString(R.string.loveresponse), res.getStringArray(R.array.love));
+        addList(res.getString(R.string.suicideresponse), res.getStringArray(R.array.suicide));
+        addList(res.getString(R.string.drugresponse), res.getStringArray(R.array.drugs));
+        addList(res.getString(R.string.obeseresponse), res.getStringArray(R.array.obesity));
+        addList(res.getString(R.string.vorcresponse), res.getStringArray(R.array.vorc));
+        addList(res.getString(R.string.lorrresponse), res.getStringArray(R.array.lorr));
+        addList(res.getString(R.string.fruorvegeresponse), res.getStringArray(R.array.fruorvege));
+        addList(res.getString(R.string.sleepresponse), res.getStringArray(R.array.sleep));
+        addList(res.getString(R.string.expectresponse), res.getStringArray(R.array.expectations));
+        addList(res.getString(R.string.presentresponse), res.getString(R.string.startpresent));
         addExternalLists();
 
     }
 
     public void addExternalLists(){
+
         if(canReadExternal()){
             File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "userDs.txt");
             if(!file.exists()) return;
@@ -66,23 +58,26 @@ public class ChoiceBacklog {
                 e.printStackTrace();
             }
         } else System.out.println("can't read external data");
+
     }
 
     public String reply(String problem) {
         for (Map.Entry<List<String>, String> entry : vals.entrySet()) {
             for (String key : entry.getKey()) {
-                if (problem.contains(key)) {
+                if (problem.toLowerCase().contains(key.toLowerCase())) {
                     return vals.get(entry.getKey());
                 }
             }
         }
-        return ctx.getString(R.string.unsure);
+        return res.getString(R.string.unsure);
     }
 
     public boolean canReadExternal(){
         String state = Environment.getExternalStorageState();
         return Environment.MEDIA_MOUNTED.equals(state) || Environment.MEDIA_MOUNTED_READ_ONLY.equals(state);
     }
+
+
 
     public void addList(String value, String... keys){
         List<String> list = Arrays.asList(keys);
