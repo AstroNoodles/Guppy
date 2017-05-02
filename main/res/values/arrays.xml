@@ -14,11 +14,11 @@
     <string-array name="love">
         <item> love </item> <item> bang </item> <item> kiss </item> <item> sex </item>
         <item> erotic </item> </string-array>
-    <string name="loveresponse">Think about if you\'re happy with him/her.</string>
+    <string name="loveresponse">Think about if you\'re happy with him/her./n Think about how a relationship will afect your school or work life./n Love can set you free/nDont be lo</string>
 
     <string-array name="suicide">
         <item> death </item> <item> suicide </item> <item> felo-de-se </item> <item> melange </item>
-        <item> hara-kiri </item> <item> self-annihilation </item> </string-array>
+        <item> hara-kiri </item> <item> self-annihilation </item> <item> I want to kill myself </item> <item> sepuku </item> </string-array>
     <string name="suicideresponse">Don\'t kill yourself! \nThink about what you hold dear in life! Friends, Family, Video Games? ;-)
     </string>
 
@@ -51,12 +51,12 @@
     <string-array name="sleep">
         <item>to sleep </item> <item> too late </item> <item> not want sleep </item> <item> stay up all night</item>
         <item> all-nighter</item> <item> What time should I go to sleep? </item> </string-array>
-    <string name="sleepresponse">Try to go to sleep at a reasonable hour. \nPreferably, 11 pm or so. </string>
+    <string name="sleepresponse">Try to go to sleep at a reasonable hour. \nPreferably get about 7 hours of sleep \n Dont stay up late for too many nights and dont stay up unless you are doing somthing productive./n sleep is needed for groth </string>
 
     <string-array name="expectations">
         <item>big test</item> <item>high expectations</item> <item>wonderful score</item>  <item>scared of test</item>
         <item>overconfidence</item> <item>overconfident</item> <item>huge expectations</item> </string-array>
-    <string name="expectresponse">Lower your expectations.</string>
+    <string name="expectresponse">Lower your expectations./n Study be prepared /n Dont study too much don't stress out studying</string>
 
     <string name="startpresent">Should we start the presentation?</string>
     <string name="presentresponse">Yes, now is definitely the time to present.</string>
