@@ -14,7 +14,7 @@
     <string-array name="love">
         <item> love </item> <item> bang </item> <item> kiss </item> <item> sex </item>
         <item> erotic </item> </string-array>
-    <string name="loveresponse">Think about if you\'re happy with him/her./n Think about how a relationship will afect your school or work life./n Love can set you free/nDont be lo</string>
+    <string name="loveresponse">Think about if you\'re happy with that./n Con: Think about how a relationship will affect your school or work life./n Pro: Love can set you free/n Loneliness can be disheartening </string>
 
     <string-array name="suicide">
         <item> death </item> <item> suicide </item> <item> felo-de-se </item> <item> melange </item>
@@ -46,7 +46,7 @@
     <string-array name="fruorvege">
         <item> hungry </item> <item> I want food </item> <item> diet </item> <item> quick snack </item>
     </string-array>
-    <string name="fruorvegeresponse">Eat fruits or vegetables. \nOr, try a healthy substitute.</string>
+    <string name="fruorvegeresponse">Eat fruits or vegetables. \n Or, try a healthy substitute. \ If you're really craving junk food just don't eat too much or make a habit out of it </string>
 
     <string-array name="sleep">
         <item>to sleep </item> <item> too late </item> <item> not want sleep </item> <item> stay up all night</item>
@@ -56,8 +56,12 @@
     <string-array name="expectations">
         <item>big test</item> <item>high expectations</item> <item>wonderful score</item>  <item>scared of test</item>
         <item>overconfidence</item> <item>overconfident</item> <item>huge expectations</item> </string-array>
-    <string name="expectresponse">Lower your expectations./n Study be prepared /n Dont study too much don't stress out studying</string>
-
+    <string name="expectresponse">Lower your expectations./n Study be prepared /n Dont study too much don't stress out studying </string>
+    
+    <string-array> name = "sirryripoff">
+                 <item> Youre just a siri ripp off </item> <item> Your not as good as siri</item> <item> siri </item>  </string-array> 
+    <string name = "sirryripoff"> No siri is obslelte</string>
+                         
     <string name="startpresent">Should we start the presentation?</string>
     <string name="presentresponse">Yes, now is definitely the time to present.</string>
 </resources>
