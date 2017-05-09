@@ -58,9 +58,13 @@
         <item>overconfidence</item> <item>overconfident</item> <item>huge expectations</item> </string-array>
     <string name="expectresponse">Lower your expectations./n Study be prepared /n Dont study too much don't stress out studying </string>
     
-    <string-array> name = "sirryripoff">
+    <string-array name = "sirryripoff">
                  <item> Youre just a siri ripp off </item> <item> Your not as good as siri</item> <item> siri </item>  </string-array> 
-    <string name = "sirryripoff"> No siri is obslelte</string>
+    <string name = "sirryripoffresponse"> No siri is obslelte</string>
+    
+    <string-array name = "hello" >
+        <item> Hi </item> <item> hello </item>  </string-array>
+    <string name="helloresponse" > Hello </string>   
                          
     <string name="startpresent">Should we start the presentation?</string>
     <string name="presentresponse">Yes, now is definitely the time to present.</string>
