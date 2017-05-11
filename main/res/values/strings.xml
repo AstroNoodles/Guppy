@@ -5,7 +5,9 @@
     <string name="empty">Clear</string>
     <string name="save">Save</string>
     <string name="go">Go</string>
-    <string name="unsure">I\'m not sure on that.\n Could you remind me on what to say?</string>
+    <string name="unsure">I\'m not sure on that.\n Could you remind me on the pros and cons of that decision?</string>
     <string name="noexternal">This app cannot write to external data. Please turn this permission on.</string>
     <string name="une">not sure</string>
+    <string name="cons">Cons:</string>
+    <string name="pros">Pros:</string>
 </resources>

@@ -1,10 +1,10 @@
 package com.squarespace.mike.choice;
 
 import android.os.Environment;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,26 +15,33 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class ChoiceActivity extends AppCompatActivity {
-    public TextView result;
-    public EditText situation, respond;
-    public Button save;
+    public TextView result, pl, cl;
+    public EditText situation, pros, cons;
+    public FloatingActionButton save;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-         super.onCreate(savedInstanceState);
-         setContentView(R.layout.activity_choice);
-         situation = (EditText) findViewById(R.id.situation);
-         result = (TextView) findViewById(R.id.result);
-         respond = (EditText) findViewById(R.id.respond);
-         save = (Button) findViewById(R.id.set);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_choice);
+        situation = (EditText) findViewById(R.id.situation);
+        result = (TextView) findViewById(R.id.result);
+        pros = (EditText) findViewById(R.id.pros);
+        cons = (EditText) findViewById(R.id.cons);
+        save = (FloatingActionButton) findViewById(R.id.save);
+        pl = (TextView) findViewById(R.id.proLabel);
+        cl = (TextView) findViewById(R.id.conLabel);
+
     }
 
     public void start(View v){
         ChoiceBacklog log = new ChoiceBacklog(getResources());
         String reply = log.reply(situation.getText().toString());
         if(reply.contains(getString(R.string.une))){
-            respond.setVisibility(View.VISIBLE);
+            pl.setVisibility(View.VISIBLE);
+            cl.setVisibility(View.VISIBLE);
+            pros.setVisibility(View.VISIBLE);
+            cons.setVisibility(View.VISIBLE);
             save.setVisibility(View.VISIBLE);
             result.setText(reply);
         } else result.setText(reply);
@@ -44,9 +51,13 @@ public class ChoiceActivity extends AppCompatActivity {
     public void clear(View v){
         situation.setText("");
         result.setText("");
-        respond.setText("");
-        save.setVisibility(View.GONE);
-        respond.setVisibility(View.INVISIBLE);
+        pros.setText("");
+        cons.setText("");
+        save.setVisibility(View.INVISIBLE);
+        pros.setVisibility(View.INVISIBLE);
+        cons.setVisibility(View.INVISIBLE);
+        pl.setVisibility(View.INVISIBLE);
+        cl.setVisibility(View.INVISIBLE);
         situation.requestFocus();
     }
 
@@ -55,7 +66,7 @@ public class ChoiceActivity extends AppCompatActivity {
             File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "userDs.txt");
             file.getParentFile().mkdirs();
             try(BufferedWriter bw = new BufferedWriter(new FileWriter(file, true));){
-                bw.write(situation.getText().toString() + ":" + respond.getText().toString() + "\n");
+                bw.write(situation.getText().toString() + ":" + pros.getText().toString() + " " + cons.getText().toString() + "\n");
                 bw.flush();
             } catch (IOException e) {
                 e.printStackTrace();

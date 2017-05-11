@@ -31,6 +31,8 @@ public class ChoiceBacklog {
         addList(res.getString(R.string.fruorvegeresponse), res.getStringArray(R.array.fruorvege));
         addList(res.getString(R.string.sleepresponse), res.getStringArray(R.array.sleep));
         addList(res.getString(R.string.expectresponse), res.getStringArray(R.array.expectations));
+        addList(res.getString(R.string.siriresponse), res.getStringArray(R.array.siri));
+        addList(res.getString(R.string.hiresponse), res.getStringArray(R.array.hi));
         addList(res.getString(R.string.presentresponse), res.getString(R.string.startpresent));
         addExternalLists();
 
