@@ -2,31 +2,33 @@
 <resources>
     <string-array name="feelings">
         <item> triste </item> <item> enojado </item> <item> molesto </item> <item> amargo </item>
-        <item> enfurecido </item> <item> disparatado </item> <item> demente </item> <item> loco </item>
+        <item> enfurecido </item> <item> disparatado </item> <item> idiota </item> <item> tonto </item>
         <item> trastornado </item> </string-array>
-    <string name="feelresponse">¡Calma, \ntodo va a estar bien!</string>
+    <string name="feelresponse">Está bien liberar sus sentimientos de vez en cuando. \n
+        Sin embargo, tratar de calmar a sí mismo como todo se resolverá finalmente.</string>
 
     <string-array name="injury">
-        <item> fuego </item> <item> quemadura </item> <item> corte </item> <item> congelación </item>
-        <item> congelado </item> </string-array>
-    <string name="injuryresponse">Déjela curar apagado. \nEntonces, repensar lo que hiciste</string>
+        <item> quemé </item> <item> quemadura </item> <item> corte </item> <item> congelación </item>
+        <item> congelado </item> <item> herida </item> <item> moretón </item> </string-array>
+    <string name="injuryresponse">Aunque herido a ti mismo, sabes que puedes aprender de tus errores y no volver ese dolor.</string>
 
     <string-array name="love">
-        <item> amor </item> <item> tirarse </item> <item> beso </item> <item> sexo </item>
+        <item> amor </item> <item> relaciones sexuales </item> <item> beso </item> <item> sexo </item>
         <item> erótico </item> </string-array>
-    <string name="loveresponse">Piense si usted es feliz con él/ella.</string>
+    <string name="loveresponse">Pensar si vivido muy contentos con él.\nAmor puede liberarte y usted nunca será solitario
+        pero asegúrese de que sus actividades sexuales no interfieren con la vida normal.</string>
 
     <string-array name="suicide">
         <item> muerte </item> <item> suicidio </item> <item> suicida </item> <item> mezcla </item>
-        <item> haraquiri </item> <item> odio vivir </item> </string-array>
+        <item> haraquiri </item> <item> odio vivir </item> <item>Quiero suicidarme</item> <item>seppuku</item> </string-array>
     <string name="suicideresponse">No suicidarse. \n¡Piense en lo apreciamos en la vida! \n¿Amigos, Familia, Juegos de Video? :-)
     </string>
 
     <string-array name="drugs">
         <item> morfina </item> <item> cocaína </item> <item> heroína </item> <item> uso de drugas </item>
         <item> alcoholismo </item> <item> adicción a las drogas </item> <item> alcohol abuse </item> </string-array>
-    <string name = "drugresponse"> Uso de drogas sólo se toma con moderación.\n
-        Ser demasiado borracho podría significar muerte o ser gravemente herido!</string>
+    <string name = "drugresponse"> Uso de drogas sólo debe tomarse cuando sea necesario.\n
+        Está demasiado borracho podría significar muerte o ser gravemente herido!</string>
 
     <string-array name="obesity">
         <item> obesidad </item> <item> redondez </item> <item> gordura </item> <item> gordo </item>
@@ -35,9 +37,10 @@
     <string name="obeseresponse">La obesidad es un gran problema. \nSe deje arreglarlo. \nRestringir los dulces que comes!</string>
 
     <string-array name="vorc">
-        <item> Vainilla o </item> <item> Chocolate o </item> <item> Fresa o </item> <item> ¿Vainilla o Chocolate? </item>
-    </string-array>
-    <string name="vorcresponse"> Vainilla. \nSiempre vainilla </string>
+        <item> Vainilla o </item> <item> Chocolate o </item> <item> ¿Qué helado debo obtener? </item>
+        <item> ¿Vainilla o Chocolate? </item> </string-array>
+    <string name="vorcresponse"> Vainilla, le da el mayor impulso de energía de los helados.
+        Pero, chocolate le puede dar un impulso de pensamiento para tu cerebro </string>
 
     <string-array name="lorr">
         <item> Izquierda o</item> <item> Derecho o </item> <item> izquierda o derecho? </item> </string-array>
@@ -46,16 +49,27 @@
     <string-array name="fruorvege">
         <item> hambre </item> <item> Quiero comida </item> <item> dieta </item> <item> comida rápida </item>
     </string-array>
-    <string name="fruorvegeresponse">Comer frutas y verduras \nO, Intentar un sustituto saludable.</string>
+    <string name="fruorvegeresponse">Comer algunas frutas o verduras. \n
+        Si usted realmente está anhelando, puede tener algo de comida chatarra; Hazlo sólo en moderación..</string>
 
     <string-array name="sleep">
         <item>dormir </item> <item> demasiado tarde </item> <item> no quiero dormir </item>
         <item> permanecer despierto toda la noche</item>
         <item> abierto toda la noche</item> <item> ¿A qué hora debo ir a dormir? </item> </string-array>
-    <string name="sleepresponse">Trate de ir a dormir a una hora razonable. \nPreferiblemente, 19:00 más o menos. </string>
+    <string name="sleepresponse">Trate de ir a dormir a una hora razonable para que pueda obtener alrededor de 8 horas de sueño. \n
+        Usted debe sólo hasta las tantas si es absolutamente necesario hacer algo productivo. </string>
 
     <string-array name="expectations">
         <item>gran pruebla</item> <item>altas expectativas</item> <item>buena puntuación</item>  <item>miedo de la prueba</item>
         <item>exceso de confianza </item> <item>presumido</item> <item>grandes expectativas</item> </string-array>
-    <string name="expectresponse">Baje sus expectativas.</string>
+    <string name="expectresponse">Baje sus expectativas. Sólo necesita estudiar y dejar el resto a tu ingenio.</string>
+
+    <string-array name="siri">
+        <item> Esto es peor que Siri</item> <item>Siri es mejor</item> <item>Es un timo de Siri</item> </string-array>
+    <string name="siriresponse">Entonces, ¿por qué lo hizo descargar la aplicación?</string>
+
+    <string-array name="hi">
+        <item> Hola </item> <item> Bueno </item> <item> oye </item> <item> Qué pasa</item> <item> Cómo estás </item>
+        <item> eh </item> <item> Qué hay </item> <item> Qué tal </item> <item> Que hubo </item> </string-array>
+    <string name="hiresponse">¿Cómo estás, usuario? \n¿Decirme algunas decisiones para ayudarle?</string>
 </resources>

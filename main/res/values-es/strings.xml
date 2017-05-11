@@ -5,7 +5,9 @@
     <string name="empty">Despejar</string>
     <string name="save">Salvar</string>
     <string name="go">Ir</string>
-    <string name="unsure">No estoy seguro en eso.\n ¿Podría Recordarme en qué decir?</string>
+    <string name="unsure">No estoy seguro de eso.\n¿Podría recordarme los pros y los contras de esa decisión?</string>
     <string name="noexternal">Esta aplicación no puede escribir a datos externos. Por favor, encienda este permiso.</string>
     <string name="une">No estoy seguro</string>
+    <string name="cons">Contras:</string>
+    <string name="pros">Pros</string>
 </resources>

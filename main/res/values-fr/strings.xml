@@ -8,5 +8,7 @@
     <string name="une">pas sûr</string>
     <string name="enter">Entrez votre situation ici:</string>
     <string name="noexternal">Cette application ne peut pas écrire sur des données externes. Veuillez activer cette autorisation.</string>
-    <string name="unsure">Je ne suis pas sûr de cela. Pourriez-vous me rappeler sur quoi dire?</string>
+    <string name="unsure">Je ne suis pas sûr de cela. Pourriez-vous me rappeler les avantages et les inconvénients de cette décision?</string>
+    <string name="cons">Inconvénients</string>
+    <string name="pros">Avantages</string>
 </resources>

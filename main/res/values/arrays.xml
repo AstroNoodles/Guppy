@@ -2,30 +2,33 @@
 <resources>
     <string-array name="feelings">
         <item> sad </item> <item> mad </item> <item> upset </item> <item> bitter </item>
-        <item> enraged </item> <item> harebrained </item> <item> insane </item> <item> crazy </item>
+        <item> enraged </item> <item> harebrained </item> <item> idiot </item> <item> fool </item>
         <item> argument </item> </string-array>
-    <string name="feelresponse">Calm down, \nEverything will be all right!</string>
+    <string name="feelresponse">It is okay to release your feelings every once in a while. \nHowever, try to calm yourself as
+    everything will eventually be resolved.</string>
 
     <string-array name="injury">
-        <item> fire </item> <item> burn </item> <item> cut </item> <item> frostbite </item>
-        <item> froze</item> </string-array>
-    <string name="injuryresponse">Let it heal off. \nThen, rethink what you did.</string>
+        <item> burned </item> <item> burn </item> <item> cut </item> <item> frostbite </item>
+        <item> froze</item> <item> gash </item> <item> bruise </item></string-array>
+    <string name="injuryresponse">Though you hurt yourself, know that you can learn from your mistakes and not get that
+    pain again.</string>
 
     <string-array name="love">
-        <item> love </item> <item> bang </item> <item> kiss </item> <item> sex </item>
+        <item> love </item> <item> intercourse </item> <item> kiss </item> <item> sex </item>
         <item> erotic </item> </string-array>
-    <string name="loveresponse">Think about if you\'re happy with that./n Con: Think about how a relationship will affect your school or work life./n Pro: Love can set you free/n Loneliness can be disheartening </string>
+    <string name="loveresponse">Think about if you\'re happy with him/her.\n Love can set you free and you\'ll never become lonely but
+    make sure that your sexual activities don\'t interfere with normal life.</string>
 
     <string-array name="suicide">
         <item> death </item> <item> suicide </item> <item> felo-de-se </item> <item> melange </item>
-        <item> hara-kiri </item> <item> self-annihilation </item> <item> I want to kill myself </item> <item> sepuku </item> </string-array>
+        <item> hara-kiri </item> <item> self-annihilation </item> <item> I want to kill myself</item> <item> seppuku </item> </string-array>
     <string name="suicideresponse">Don\'t kill yourself! \nThink about what you hold dear in life! Friends, Family, Video Games? ;-)
     </string>
 
     <string-array name="drugs">
         <item> morphine </item> <item> cocaine </item> <item> heroin </item> <item> drug use </item>
         <item> alcoholism </item> <item> drug addiction </item> <item> alcohol abuse</item> </string-array>
-    <string name = "drugresponse"> Drug use is only taken in moderation.\n
+    <string name = "drugresponse"> Drug use should only be taken when you need to.\n
         Being too drunk might mean death or being badly injured!</string>
 
     <string-array name="obesity">
@@ -35,9 +38,10 @@
     <string name="obeseresponse">Obesity is a big problem. \nLet yourself fix it. \nRestrict the sweets you eat!</string>
 
     <string-array name="vorc">
-        <item> Vanilla or </item> <item> Chocolate or </item> <item> Strawberry or </item> <item> Vanilla or Chocolate? </item>
-    </string-array>
-    <string name="vorcresponse"> Vanilla. \nAlways Vanilla. </string>
+        <item> Vanilla or </item> <item> Chocolate or </item> <item> Which ice cream should I get? </item>
+        <item> Vanilla or Chocolate? </item> </string-array>
+    <string name="vorcresponse"> Vanilla gives you the highest energy boost out of all ice cream. But, chocolate can give you a
+    thinking boost for your brain.</string>
 
     <string-array name="lorr">
         <item> Left or</item> <item> Right or </item> <item> Left or Right? </item> </string-array>
@@ -46,26 +50,29 @@
     <string-array name="fruorvege">
         <item> hungry </item> <item> I want food </item> <item> diet </item> <item> quick snack </item>
     </string-array>
-    <string name="fruorvegeresponse">Eat fruits or vegetables. \n Or, try a healthy substitute. \ If you're really craving junk food just don't eat too much or make a habit out of it </string>
+    <string name="fruorvegeresponse">Eat some fruits or vegetables.\n If you\'re really craving it, then you can have
+    some junk food just do it in moderation. </string>
 
     <string-array name="sleep">
         <item>to sleep </item> <item> too late </item> <item> not want sleep </item> <item> stay up all night</item>
         <item> all-nighter</item> <item> What time should I go to sleep? </item> </string-array>
-    <string name="sleepresponse">Try to go to sleep at a reasonable hour. \nPreferably get about 7 hours of sleep \n Dont stay up late for too many nights and dont stay up unless you are doing somthing productive./n sleep is needed for groth </string>
+    <string name="sleepresponse">Try to go to sleep at a reasonable hour so you get around 8 hours of sleep.\n You should
+    only pull an all-nighter if you absolutely need to do something productive. </string>
 
     <string-array name="expectations">
         <item>big test</item> <item>high expectations</item> <item>wonderful score</item>  <item>scared of test</item>
         <item>overconfidence</item> <item>overconfident</item> <item>huge expectations</item> </string-array>
-    <string name="expectresponse">Lower your expectations./n Study be prepared /n Dont study too much don't stress out studying </string>
-    
-    <string-array name = "sirryripoff">
-                 <item> Youre just a siri ripp off </item> <item> Your not as good as siri</item> <item> siri </item>  </string-array> 
-    <string name = "sirryripoffresponse"> No siri is obslelte</string>
-    
-    <string-array name = "hello" >
-        <item> Hi </item> <item> hello </item>  </string-array>
-    <string name="helloresponse" > Hello </string>   
-                         
+    <string name="expectresponse">Lower your expectations. You only need to study and leave the rest to your wits.</string>
+
+    <string-array name="siri">
+        <item> This is worse than Siri</item> <item>Siri is better</item> <item>You\'re a Siri rip-off</item> </string-array>
+    <string name="siriresponse">Then, why did you download the app?</string>
+
+    <string-array name="hi">
+        <item> Hi </item> <item> Hello </item> <item> Hey </item> <item> What\'s up</item> <item> How do you do </item>
+        <item> yo </item> <item> howdy </item> <item> sup </item> <item> hiya </item> </string-array>
+    <string name="hiresponse">How do you do, user?\n How about telling me some decisions to help you?</string>
+
     <string name="startpresent">Should we start the presentation?</string>
     <string name="presentresponse">Yes, now is definitely the time to present.</string>
 </resources>
