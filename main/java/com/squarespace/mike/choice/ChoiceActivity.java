@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,12 +38,13 @@ public class ChoiceActivity extends AppCompatActivity {
     public void start(View v){
         ChoiceBacklog log = new ChoiceBacklog(getResources());
         String reply = log.reply(situation.getText().toString());
+        hideKeyboard();
         if(reply.contains(getString(R.string.une))){
             pl.setVisibility(View.VISIBLE);
             cl.setVisibility(View.VISIBLE);
             pros.setVisibility(View.VISIBLE);
             cons.setVisibility(View.VISIBLE);
-            save.setVisibility(View.VISIBLE);
+            save.show();
             result.setText(reply);
         } else result.setText(reply);
 
@@ -62,6 +64,7 @@ public class ChoiceActivity extends AppCompatActivity {
     }
 
     public void setFile(View v){
+        hideKeyboard();
         if(canWriteExternal()) {
             File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "userDs.txt");
             file.getParentFile().mkdirs();
@@ -80,7 +83,13 @@ public class ChoiceActivity extends AppCompatActivity {
         return Environment.MEDIA_MOUNTED.equals(state);
     }
 
-
+    public void hideKeyboard(){
+        View v = this.getCurrentFocus();
+        if(v != null){
+            InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+        }
+    }
 
 
 
