@@ -10,4 +10,5 @@
     <string name="une">not sure</string>
     <string name="cons">Cons:</string>
     <string name="pros">Pros:</string>
+    <string name="saveokay">Successfully saved fo file.</string>
 </resources>
