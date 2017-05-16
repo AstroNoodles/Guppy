@@ -7,45 +7,27 @@
     <string name="feelresponse">It is okay to release your feelings every once in a while. \nHowever, try to calm yourself as
     everything will eventually be resolved.</string>
 
-    <string-array name="injury">
+    <string-array name="medical">
         <item> burned </item> <item> burn </item> <item> cut </item> <item> frostbite </item>
-        <item> froze</item> <item> gash </item> <item> bruise </item></string-array>
-    <string name="injuryresponse">Though you hurt yourself, know that you can learn from your mistakes and not get that
-    pain again.</string>
+        <item> froze</item> <item> gash </item> <item> bruise </item> <item> breathe </item> <item> fracture </item> </string-array>
+    <string name="injuryresponse">This seems like medical advice. Call your doctor for more assistance.</string>
+    
+    <string-array name="redcolor">
+        <item> Should I wear red or blue </item> <item> red or </item> <item> blue or </item> </string-array>
+    <string name="redresponse">The color red makes you more aware of your mistakes and how to fix them. However,
+        it may make you more nervous. </string>
+    
+    <string-array name="bootsorshoes"> 
+        <item> Should I wear boots or shoes? </item> <item> boots or </item> <item> shoes or </item> </string-array>
+    <string name="bsresponse">
 
-    <string-array name="love">
-        <item> love </item> <item> intercourse </item> <item> kiss </item> <item> sex </item>
-        <item> erotic </item> </string-array>
-    <string name="loveresponse">Think about if you\'re happy with him/her.\n Love can set you free and you\'ll never become lonely but
-    make sure that your sexual activities don\'t interfere with normal life.</string>
-
-    <string-array name="suicide">
-        <item> death </item> <item> suicide </item> <item> felo-de-se </item> <item> melange </item>
-        <item> hara-kiri </item> <item> self-annihilation </item> <item> I want to kill myself</item> <item> seppuku </item> </string-array>
-    <string name="suicideresponse">Don\'t kill yourself! \nThink about what you hold dear in life! Friends, Family, Video Games? ;-)
-    </string>
-
-    <string-array name="drugs">
-        <item> morphine </item> <item> cocaine </item> <item> heroin </item> <item> drug use </item>
-        <item> alcoholism </item> <item> drug addiction </item> <item> alcohol abuse</item> </string-array>
-    <string name = "drugresponse"> Drug use should only be taken when you need to.\n
-        Being too drunk might mean death or being badly injured!</string>
-
-    <string-array name="obesity">
-        <item> obesity </item> <item> rotundness </item> <item> plumpness </item> <item> fat </item>
-        <item> overweight </item> <item> chubby </item> <item> plump </item> <item> rotund </item>
-        <item> paunch </item> <item> big belly </item> <item> obese</item> </string-array>
-    <string name="obeseresponse">Obesity is a big problem. \nLet yourself fix it. \nRestrict the sweets you eat!</string>
-
+        
     <string-array name="vorc">
         <item> Vanilla or </item> <item> Chocolate or </item> <item> Which ice cream should I get? </item>
         <item> Vanilla or Chocolate? </item> </string-array>
     <string name="vorcresponse"> Vanilla gives you the highest energy boost out of all ice cream. But, chocolate can give you a
     thinking boost for your brain.</string>
 
-    <string-array name="lorr">
-        <item> Left or</item> <item> Right or </item> <item> Left or Right? </item> </string-array>
-    <string name="lorrresponse">Left. \nAlways Go Left.</string>
 
     <string-array name="fruorvege">
         <item> hungry </item> <item> I want food </item> <item> diet </item> <item> quick snack </item>
