@@ -10,4 +10,5 @@
     <string name="une">No estoy seguro</string>
     <string name="cons">Contras:</string>
     <string name="pros">Pros</string>
+    <string name="saveokay">Con éxito se guarda en archivo.</string>
 </resources>

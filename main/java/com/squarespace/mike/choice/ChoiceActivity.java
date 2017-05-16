@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -32,6 +33,14 @@ public class ChoiceActivity extends AppCompatActivity {
         save = (FloatingActionButton) findViewById(R.id.save);
         pl = (TextView) findViewById(R.id.proLabel);
         cl = (TextView) findViewById(R.id.conLabel);
+
+        situation.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        situation.setRawInputType(EditorInfo.TYPE_CLASS_TEXT);
+        pros.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        pros.setRawInputType(EditorInfo.TYPE_CLASS_TEXT);
+        cons.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        cons.setRawInputType(EditorInfo.TYPE_CLASS_TEXT);
+
 
     }
 
@@ -69,11 +78,12 @@ public class ChoiceActivity extends AppCompatActivity {
             File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "userDs.txt");
             file.getParentFile().mkdirs();
             try(BufferedWriter bw = new BufferedWriter(new FileWriter(file, true));){
-                bw.write(situation.getText().toString() + ":" + pros.getText().toString() + " " + cons.getText().toString() + "\n");
+                bw.write(situation.getText().toString() + ":" + pros.getText().toString().trim() + ". " + cons.getText().toString().trim() + "\n");
                 bw.flush();
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            Toast.makeText(this, R.string.saveokay, Toast.LENGTH_SHORT).show();
         } else
         Toast.makeText(this, R.string.noexternal, Toast.LENGTH_SHORT).show();
     }
