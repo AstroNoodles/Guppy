@@ -4,23 +4,43 @@
         <item> sad </item> <item> mad </item> <item> upset </item> <item> bitter </item>
         <item> enraged </item> <item> harebrained </item> <item> idiot </item> <item> fool </item>
         <item> argument </item> </string-array>
-    <string name="feelresponse">It is okay to release your feelings every once in a while. \nHowever, try to calm yourself as
-    everything will eventually be resolved.</string>
+    <string name="feelresponse">It’s okay to let go from time to time, just don’t overdo it. 
+        Things have a way of righting themselves over time.</string>
 
     <string-array name="medical">
         <item> burned </item> <item> burn </item> <item> cut </item> <item> frostbite </item>
-        <item> froze</item> <item> gash </item> <item> bruise </item> <item> breathe </item> <item> fracture </item> </string-array>
+        <item> froze</item> <item> gash </item> <item> bruise </item> <item> breathe </item> <item> fracture </item> <item> allergy </item> </string-array>
     <string name="injuryresponse">This seems like medical advice. Call your doctor for more assistance.</string>
     
-    <string-array name="redcolor">
-        <item> Should I wear red or blue </item> <item> red or </item> <item> blue or </item> </string-array>
-    <string name="redresponse">The color red makes you more aware of your mistakes and how to fix them. However,
-        it may make you more nervous. </string>
-    
     <string-array name="bootsorshoes"> 
-        <item> Should I wear boots or shoes? </item> <item> boots or </item> <item> shoes or </item> </string-array>
-    <string name="bsresponse">
-
+        <item> Should I wear boots or shoes? </item> <item> boots or </item> <item> shoes or </item> <item> boots or shoes </item> </string-array>
+   <string name="bsresponse"> Boots can help you during rainfalls but can be pretty heavy. Shoes are the traditional wear but don't
+        help you in any sport or condition. </string>
+    
+    <string-array name="museumormovie">
+        <item> Should I go to a museum or movie? </item> <item> museum or movie </item> <item> museum or </item> </string-array>
+    <string name="mormresponse">Museums can be intellitually stimulating with art and films but can be boring if you don\'t like
+        art. Movies are a great way to hang with your friends but may not mean much to learn something. </string>
+    
+    <string-array name="applesororanges">
+        <item> Should I eat apples or oranges? </item> <item> apples or oranges </item> <item> apples or </item> </string-array>
+    <string name="aororesponse">Apples are a great antioxident having high fiber, Vitamin A and C but they may contain pesticides. On the
+        other hand, oranges have high amounts of calcium but they may be harmful in large dosages.</string>
+    
+    <string-array name="tacoorburrito"> 
+        <item>Should I eat tacos or burritos?</item> <item>taco or burrito</item> <item>tacos or burritos</item> </string-array>
+    <string name="torbresponse">Tacos are a quick snack in Mexico and are usually garnished with toppings. Burritos are
+    a large dinner meal with a bean filling typically added with cheese.</string>
+    
+    <string-array name="jacket">
+        <item> it is rainy </item> <item> rainjacket or jacket </item> <item> Should I wear a jacket or rainjacket? </item> <item> protect
+        from rain </item> </string-array>
+    <string name="jresponse"> Check the weather. It will usually dictate about which clothing is helpful in the climate. </string>
+    
+    <string-array name="youtubeortv">
+        <item> Should I watch YouTube or TV? </item> <item> youtube or tv </item> <item> youtube or </item> </string-array>
+    <string name="ytvresponse">Though YouTube can be enjoyable watching straight through your computer, it will run out of your
+    constant feeds. TV does this as well but can space out between each redone episode. </string>
         
     <string-array name="vorc">
         <item> Vanilla or </item> <item> Chocolate or </item> <item> Which ice cream should I get? </item>
@@ -42,7 +62,7 @@
     only pull an all-nighter if you absolutely need to do something productive. </string>
 
     <string-array name="expectations">
-        <item>big test</item> <item>high expectations</item> <item>wonderful score</item>  <item>scared of test</item>
+        <item>big test</item> <item>high expectations</item> <item>scared of test</item>
         <item>overconfidence</item> <item>overconfident</item> <item>huge expectations</item> </string-array>
     <string name="expectresponse">Lower your expectations. You only need to study and leave the rest to your wits.</string>
 
@@ -51,8 +71,8 @@
     <string name="siriresponse">Then, why did you download the app?</string>
 
     <string-array name="hi">
-        <item> Hi </item> <item> Hello </item> <item> Hey </item> <item> What\'s up</item> <item> How do you do </item>
-        <item> yo </item> <item> howdy </item> <item> sup </item> <item> hiya </item> </string-array>
+        <item> How are you </item> <item> Hello </item> <item> Hey </item> <item> What\'s up</item> <item> How do you do </item>
+        <item> aye </item> <item> howdy </item> <item> sup' </item> <item> hiya </item> </string-array>
     <string name="hiresponse">How do you do, user?\n How about telling me some decisions to help you?</string>
 
     <string name="startpresent">Should we start the presentation?</string>
