@@ -7,34 +7,41 @@
     <string name="feelresponse">Está bien liberar sus sentimientos de vez en cuando. \n
         Sin embargo, tratar de calmar a sí mismo como todo se resolverá finalmente.</string>
 
-    <string-array name="injury">
-        <item> quemé </item> <item> quemadura </item> <item> corte </item> <item> congelación </item>
-        <item> congelado </item> <item> herida </item> <item> moretón </item> </string-array>
-    <string name="injuryresponse">Aunque herido a ti mismo, sabes que puedes aprender de tus errores y no volver ese dolor.</string>
+    <string-array name="medical">
+        <item> quemar </item> <item> quemardura </item> <item> corte </item> <item> congelación </item>
+        <item> congelar </item> <item> corte profundo </item> <item> moretón </item> <item> respirar </item> <item> fractura </item> <item> alergia </item> </string-array>
+    <string name="injuryresponse">Esta parece una pregunta médica. Llame a su médico para obtener más ayuda.</string>
 
-    <string-array name="love">
-        <item> amor </item> <item> relaciones sexuales </item> <item> beso </item> <item> sexo </item>
-        <item> erótico </item> </string-array>
-    <string name="loveresponse">Pensar si vivido muy contentos con él.\nAmor puede liberarte y usted nunca será solitario
-        pero asegúrese de que sus actividades sexuales no interfieren con la vida normal.</string>
+    <string-array name="bootsorshoes">
+        <item> Debo llegar botas o zapatos? </item> <item> botas o </item> <item> zapatos o </item> <item> botas o zapatos </item> </string-array>
+    <string name="bsresponse"> Las botas pueden ayudarle durante las lluvias, pero puede ser bastante pesado.
+        Los zapatos son el desgaste tradicional pero no le ayudan en cualquier deporte o condición. </string>
 
-    <string-array name="suicide">
-        <item> muerte </item> <item> suicidio </item> <item> suicida </item> <item> mezcla </item>
-        <item> haraquiri </item> <item> odio vivir </item> <item>Quiero suicidarme</item> <item>seppuku</item> </string-array>
-    <string name="suicideresponse">No suicidarse. \n¡Piense en lo apreciamos en la vida! \n¿Amigos, Familia, Juegos de Video? :-)
-    </string>
+    <string-array name="museumormovie">
+        <item> Debo ir museo o película </item> <item> museo o película </item> <item> museo o </item> </string-array>
+    <string name="mormresponse">Los museos pueden ser intelectualmente estimulantes con el arte y las películas, pero puede ser aburrido si no te gusta el arte.
+        Las películas son una gran manera de colgar con sus amigos, pero no puede significar mucho para aprender algo. </string>
 
-    <string-array name="drugs">
-        <item> morfina </item> <item> cocaína </item> <item> heroína </item> <item> uso de drugas </item>
-        <item> alcoholismo </item> <item> adicción a las drogas </item> <item> alcohol abuse </item> </string-array>
-    <string name = "drugresponse"> Uso de drogas sólo debe tomarse cuando sea necesario.\n
-        Está demasiado borracho podría significar muerte o ser gravemente herido!</string>
+    <string-array name="applesororanges">
+        <item> Debo comer manzanas o naranjas </item> <item> manzanas o naranjas </item> <item> manzanas o </item> </string-array>
+    <string name="aororesponse">Las manzanas son un gran antioxidante que tiene alta fibra, vitamina a y c pero pueden contener pesticidas.
+        Por otro lado, las naranjas tienen altas cantidades de calcio pero pueden ser dañinas en dosis grandes.</string>
 
-    <string-array name="obesity">
-        <item> obesidad </item> <item> redondez </item> <item> gordura </item> <item> gordo </item>
-        <item> con subrepeso </item> <item> rechoncho </item> <item> regordete </item> <item> rotundo </item>
-        <item> barriga </item> <item> gran barriga </item> <item> obeso </item> </string-array>
-    <string name="obeseresponse">La obesidad es un gran problema. \nSe deje arreglarlo. \nRestringir los dulces que comes!</string>
+    <string-array name="tacoorburrito">
+        <item>Debo comer tacos o burritos?</item> <item>taco o burrito</item> <item>tacos o burritos</item> </string-array>
+    <string name="torbresponse">Los tacos son un bocadillo rápido en México y suelen adornarse con aderezos.
+        Los burritos son una cena grande con un relleno de frijol típicamente añadido con queso.</string>
+
+    <string-array name="jacket">
+        <item> es lluvioso </item> <item> chaqueta o chaqueta de lluvia </item> <item> me pongo una chaqueta o chaqueta de lluvia? </item> <item> proteja
+        de la lluvia </item> </string-array>
+    <string name="jresponse"> Compruebe el tiempo. Generalmente se dictan sobre que ropa es útil en el clima. </string>
+
+    <string-array name="youtubeortv">
+        <item> Debo ver YouTube o TV? </item> <item> youtube o tv </item> <item> youtube o </item> </string-array>
+    <string name="ytvresponse">Aunque YouTube puede ser agradable ver directamente a través de su computadora, quedará sin sus fuentes constantes.
+        TV hace así pero puede espacio entre cada episodio rehecho. </string>
+
 
     <string-array name="vorc">
         <item> Vainilla o </item> <item> Chocolate o </item> <item> ¿Qué helado debo obtener? </item>
@@ -42,9 +49,6 @@
     <string name="vorcresponse"> Vainilla, le da el mayor impulso de energía de los helados.
         Pero, chocolate le puede dar un impulso de pensamiento para tu cerebro </string>
 
-    <string-array name="lorr">
-        <item> Izquierda o</item> <item> Derecho o </item> <item> izquierda o derecho? </item> </string-array>
-    <string name="lorrresponse">Izquierda. \nSiempre vaya a la izquierda.</string>
 
     <string-array name="fruorvege">
         <item> hambre </item> <item> Quiero comida </item> <item> dieta </item> <item> comida rápida </item>
@@ -60,7 +64,7 @@
         Usted debe sólo hasta las tantas si es absolutamente necesario hacer algo productivo. </string>
 
     <string-array name="expectations">
-        <item>gran pruebla</item> <item>altas expectativas</item> <item>buena puntuación</item>  <item>miedo de la prueba</item>
+        <item>gran pruebla</item> <item>altas expectativas</item> <item>miedo de la prueba</item>
         <item>exceso de confianza </item> <item>presumido</item> <item>grandes expectativas</item> </string-array>
     <string name="expectresponse">Baje sus expectativas. Sólo necesita estudiar y dejar el resto a tu ingenio.</string>
 

@@ -21,41 +21,36 @@ public class ChoiceBacklog {
     public ChoiceBacklog(Resources res){
         this.res = res;
         addList(res.getString(R.string.feelresponse), res.getStringArray(R.array.feelings));
-        addList(res.getString(R.string.injuryresponse), res.getStringArray(R.array.injury));
-        addList(res.getString(R.string.loveresponse), res.getStringArray(R.array.love));
-        addList(res.getString(R.string.suicideresponse), res.getStringArray(R.array.suicide));
-        addList(res.getString(R.string.drugresponse), res.getStringArray(R.array.drugs));
-        addList(res.getString(R.string.obeseresponse), res.getStringArray(R.array.obesity));
+        addList(res.getString(R.string.injuryresponse), res.getStringArray(R.array.medical));
         addList(res.getString(R.string.vorcresponse), res.getStringArray(R.array.vorc));
-        addList(res.getString(R.string.lorrresponse), res.getStringArray(R.array.lorr));
         addList(res.getString(R.string.fruorvegeresponse), res.getStringArray(R.array.fruorvege));
         addList(res.getString(R.string.sleepresponse), res.getStringArray(R.array.sleep));
         addList(res.getString(R.string.expectresponse), res.getStringArray(R.array.expectations));
         addList(res.getString(R.string.siriresponse), res.getStringArray(R.array.siri));
         addList(res.getString(R.string.hiresponse), res.getStringArray(R.array.hi));
+        addList(res.getString(R.string.jresponse), res.getStringArray(R.array.jacket));
+        addList(res.getString(R.string.bsresponse), res.getStringArray(R.array.bootsorshoes));
+        addList(res.getString(R.string.mormresponse), res.getStringArray(R.array.museumormovie));
+        addList(res.getString(R.string.aororesponse), res.getStringArray(R.array.applesororanges));
+        addList(res.getString(R.string.torbresponse), res.getStringArray(R.array.tacoorburrito));
+        addList(res.getString(R.string.ytvresponse), res.getStringArray(R.array.youtubeortv));
         addList(res.getString(R.string.presentresponse), res.getString(R.string.startpresent));
         addExternalLists();
 
     }
 
     public void addExternalLists(){
-
+        System.out.println(canReadExternal());
         if(canReadExternal()){
             File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "userDs.txt");
             if(!file.exists()) return;
             try{
                 BufferedReader br = new BufferedReader(new FileReader(file));
                 String line;
-                StringBuilder build = new StringBuilder();
                 while((line = br.readLine()) != null){
-                    build.append(line);
+                    String[] kv = line.split(":");
+                    addList(kv[1], kv[0]);
                 }
-                String[] items = build.toString().split(":");
-                String key = "", value = "";
-                for(int i = 0; i < items.length; i++){
-                    if(i % 2 == 0) key = items[i]; else value = items[i];
-                }
-                addList(value, key);
             } catch(IOException e){
                 e.printStackTrace();
             }

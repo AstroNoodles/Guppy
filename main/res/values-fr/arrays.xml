@@ -7,43 +7,45 @@
     <string name="feelresponse">Il est bon de libérer vos sentiments de temps en temps. \n
         Cependant, essayez de vous calmer, car tout sera éventuellement résolu.</string>
 
-    <string-array name="injury">
-        <item> brûlé </item> <item> brûler </item> <item> entaille </item> <item> gelure </item>
-        <item> Gelé </item> <item> balafre</item> <item>bleu</item> </string-array>
-    <string name="injuryresponse">Bien que vous vous blessiez,
-        sachez que vous pouvez apprendre de vos erreurs et ne pas ressentir cette douleur.</string>
+    <string-array name="medical">
+        <item> brûlé </item> <item> brûlér </item> <item> entaille </item> <item> gelure </item>
+        <item> Gelé </item> <item> balafre </item> <item> bleu </item> <item> repirer </item> <item> fracture </item> <item> allergie </item> </string-array>
+    <string name="injuryresponse">Cela semble être une question médicale. Appelez votre médecin pour plus d\'assistance.</string>
 
-    <string-array name="love">
-        <item> amour </item> <item> rapports sexuels </item> <item> bise </item> <item> sexe </item>
-        <item> érotique </item> </string-array>
-    <string name="loveresponse">Pensez si vous êtes heureux avec lui. \n
-        L\'amour peut vous libérer et vous ne serez jamais seul, mais assurez-vous que vos activités sexuelles n\'interfèrent pas avec la vie normale.</string>
+    <string-array name="bootsorshoes">
+        <item> Devrais-je porter des bottes ou des chaussures? </item> <item> bottes ou </item> <item> cahaussures ou </item> <item> bottes ou cahaussures</item> </string-array>
+    <string name = "bsresponse"> Les bottes peuvent vous aider pendant les pluies, mais peuvent être assez lourdes. Les chaussures sont l\'usure traditionnelle mais ne sont pas
+                Vous aider dans n\'importe quel sport ou condition. </string>
 
-    <string-array name="suicide">
-        <item> décès </item> <item> suicide </item> <item> coupable de suicide </item> <item> trépas </item>
-        <item> hara-kiri </item> <item> auto-anéantissement </item> <item>je veux me tuer</item> <item>seppuku</item> </string-array>
-    <string name="suicideresponse">Ne vous tuez pas! Pensez à ce que vous êtes cher dans la vie! Amis, famille, jeux vidéo? ;-)
-    </string>
+        <string-array name = "museumormovie">
+            <item> Dois-je aller à un musée ou à un film? </item> <item> musée ou film </item> <item> musée ou </item> </string-array>
+        <string name = "mormresponse"> Les musées peuvent stimuler l\'art et les films en entier, mais peuvent être ennuyeux si vous ne l\'aimez pas
+            art. Les films sont une excellente façon de s\'accrocher avec vos amis, mais peut-être pas marre d\'apprendre quelque chose. </string>
 
-    <string-array name="drugs">
-        <item> morphine </item> <item> cocaïne </item> <item> héroïne </item> <item> l\'usage de drogues </item>
-        <item> alcoolisme </item> <item> la toxicomanie </item> <item> l\'abus d\'alcool </item> </string-array>
-    <string name = "drugresponse"> L\'usage de drogue ne doit être pris que lorsque vous en avez besoin. \n
-        Être trop ivre pourrait signifier la mort ou être gravement blessé!</string>
+        <string-array name = "applesororanges">
+            <item> Devrais-je manger des pommes ou des oranges? </item> <item> pommes ou oranges </item> <item> pommes ou </item> </string-array>
+        <string name = "aororesponse"> Les pommes sont un excellent antioxident ayant des fibres élevées, la vitamine A et C, mais elles peuvent contenir des pesticides. Sur le
+            D\'autre part, les oranges ont des quantités élevées de calcium, mais elles peuvent être nocives en grandes doses. </string>
 
-    <string-array name="obesity">
-        <item> obésité </item> <item> La rotation </item> <item> plumpness </item> <item> graisse </item>
-        <item> en surpoids </item> <item> joufflu </item> <item> dodu </item> <item> rondelet </item>
-        <item> panse </item> <item> gros ventre </item> <item> obèse </item> </string-array>
-    <string name="obeseresponse">L\'obésité est un gros problème. \nLaissez-vous réparer. \nLimitez les bonbons que vous mangez!</string>
+        <string-array name = "tacoorburrito">
+            <item> Devrais-je manger des tacos ou des burritos? </item> <item> taco ou burrito </item> <item> tacos ou burritos </item> </string-array>
+        <string name = "torbresponse"> Les tacos sont une collation rapide au Mexique et sont généralement garnis de garnitures. Les burritos sont
+        Un grand dîner avec un remplissage de haricots généralement ajouté avec du fromage. </string>
+
+        <string-array name = "jacket">
+            <item> il est pluvieux </item> <item> imperméable ou veste </item> <item> Devrais-je porter une veste ou un gilet de pluie? </item> <item> protéger
+            De la pluie </item> </string-array>
+        <string name = "jresponse"> Vérifiez la météo. Il dictera généralement sur quel vêtement est utile dans le climat. </string>
+
+        <string-array name = "youtubeortv">
+            <item> Devrais-je regarder YouTube ou TV? </item> <item> youtube ou tv </item> <item> youtube ou </item> </string-array>
+        <string name = "ytvresponse"> Bien que YouTube puisse être agréable à regarder directement dans votre ordinateur, il sera à court de votre
+        Flux constants. La télévision fait cela aussi, mais peut s\'écarter entre chaque épisode redéfini. </string>
 
     <string-array name="vorc">
         <item> Vanille ou </item> <item> Chocolat ou </item> <item> Quelle glace je devrais-je obtenir? </item> <item> Vanille ou chocolat? </item> </string-array>
     <string name="vorcresponse"> La vanille vous donne le meilleur élan énergétique de toutes les glaces. Mais, le chocolat peut vous donner un coup de pouce pour votre cerveau.</string>
 
-    <string-array name="lorr">
-        <item> Gauche ou </item> <item> Droit ou </item> <item> gauche ou droite? </item> </string-array>
-    <string name="lorrresponse">La gauche. \nToujours aller à gauche.</string>
 
     <string-array name="fruorvege">
         <item> affamé </item> <item> Je veux de la aliments </item> <item> régime </item> <item> quick collation rapide </item>
@@ -58,7 +60,7 @@
         Vous ne devriez que tirer une all-nighter si vous devez absolument faire quelque chose de productif. </string>
 
     <string-array name="expectations">
-        <item>grand test</item> <item>des attentes élevées </item> <item>Merveilleux score</item>  <item>Peur du test</item>
+        <item>grand test</item> <item>des attentes élevées </item> <item>Peur du test</item>
         <item>trop de confience</item> <item>trop confiant</item> <item>Énormes attentes</item> </string-array>
     <string name="expectresponse">Abaissez vos attentes. Vous avez seulement besoin d\'étudier et de laisser le reste à votre esprit.</string>
 
