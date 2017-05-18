@@ -12,4 +12,6 @@
     <string name="cons">Inconvénients</string>
     <string name="pros">Avantages</string>
     <string name="saveokay">Enregistré avec succès dans un fichier.</string>
+    <string name="presentresponse">blah</string>
+    <string name="startpresent">blah</string>
 </resources>

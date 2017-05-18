@@ -59,15 +59,15 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/save"
         android:layout_below="@+id/proLabel"
+        android:layout_centerVertical="true"
         android:background="@drawable/goldblack"
         android:ems="20"
+        android:gravity="top|start"
         android:inputType="textMultiLine"
-        android:layout_centerVertical="true"
         android:lines="8"
-        android:textColor="@android:color/holo_green_dark"
         android:scrollHorizontally="false"
-        android:visibility="invisible"
-        android:gravity="top|start" />
+        android:textColor="#008000"
+        android:visibility="invisible" />
 
     <EditText
         android:id="@+id/cons"

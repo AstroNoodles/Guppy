@@ -11,4 +11,6 @@
     <string name="cons">Contras:</string>
     <string name="pros">Pros</string>
     <string name="saveokay">Con éxito se guarda en archivo.</string>
+    <string name="presentresponse">blah</string>
+    <string name="startpresent">blah</string>
 </resources>
