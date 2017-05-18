@@ -7,4 +7,5 @@ Android Studio Link: https://developer.android.com/studio/index.html
 
 # Thanks
 -  Stack Overflow
+-  Mr. Duryea and T.A.G, I would not have completed the technical portions without you.
 
